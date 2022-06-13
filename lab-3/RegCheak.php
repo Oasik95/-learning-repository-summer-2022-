@@ -10,7 +10,7 @@
 		$password = $_REQUEST['password'];	
 	}
 
-	if ($username == 'FAHIM' || $password == 'FAHIM' ) {
+	if ($username == 'OASIK' || $password == 'OASIK' ) {
 		echo "LOGIN SUCCESs <br>";
 	}
 		if($username == $password){
