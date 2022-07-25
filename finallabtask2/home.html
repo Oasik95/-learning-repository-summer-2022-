@@ -5,55 +5,31 @@
 <body>
 		<form  onsubmit="return validate()" method="post" enctype="">
 			<fieldset>
-				<legend>signup</legend>
+				<legend>add train trip</legend>
 				<table>
 					<tr>
-						<td>Name</td></tr>
+						<td>leaving</td></tr>
 						<tr>
-						<td><input type="text" name="username" id ="username"value=""></td>
+						<td><input type="text" name="leaving" id ="leaving"value=""></td>
 					</tr>
 					<tr>
-						<td>ID</td>
+						<td>going</td>
 						</tr>
 						<tr>
-						<td><input type="Number" name="id" id="id"value=""></td>
+						<td><input type="text" name="going" id="going"value=""></td>
 					</tr>
 					
 					<tr>
-						<td>password</td></tr>
+						<td>time</td></tr>
 						<tr>
-						<td><input type="password" name="password" id="password" value=""></td>
+						<td><input type="text" name="time" id="time" value=""></td>
 					</tr>
 					<tr>
-						<td>confirm_password</td></tr>
+						<td>date</td></tr>
 						<tr>
-						<td><input type="password" name="confirm" id="confirm" value=""></td>
+						<td><input type="text" name="date" id="date" value=""></td>
 					</tr>
-					<tr>
-						<td>Phone_Number</td></tr>
-						<tr>
-						<td><input type="text" name="Pnumber" id="Pnumber" value=""></td>
-					</tr>
-					<tr>
-						<td>Email</td></tr>
-						<tr>
-						<td><input type="email" name="email" id="email" value=""></td>
-					</tr>
-										<tr>
-						<td>DOB</td></tr>
-						<tr>
-						<td><input type="date" name="dob" id="dob" value=""></td>
-					</tr>
-					<tr>
-						<td>Address</td></tr>
-						<tr>
-						<td >
-							<textarea style="height: 70px;width: 180px;"></textarea>
-						</td>
-					</tr>
-					<td><br></td>
 					
-					<tr>
 						<td>
 							<input type="submit" name="" id ="submit"value="SignUp">
 							<a href="signup.html"> Signin </a>
@@ -66,106 +42,57 @@
 		<script>
 			function validate()
 			{
-				let username = document.getElementById("username").value;
+				let leaving = document.getElementById("leaving").value;
 
-				let id = document.getElementById("id").value;
+				let going = document.getElementById("going").value;
 
-				let password = document.getElementById("password").value;
+				let time = document.getElementById("time").value;
 
-				let confirm = document.getElementById("confirm").value;
-
-				let Pnumber = document.getElementById("Pnumber").value;
-
-				let email = document.getElementById("email").value;
-
-				let dob = document.getElementById("dob").value;
+				let date = document.getElementById("date").value;
 
 				
-
-				if(username != "")
-				{
-					return true;
-				}
-				else
-				{
-					alert("Wrong username");
-					return false;
-				}
-
-
-
-
 				
-				if(id != "")
+
+				if(leaving != "")
 				{
 					return true;
 				}
 				else
 				{
-					alert("Wrong id");
+					alert("null value");
 					return false;
 				}
-
-				if(password != "")
-				{
-					return true;
-				}
-				else
-				{
-					alert("Wrong password");
-					return false;
-				}
-
-				if(confirm != "")
-				{
-					return true;
-				}
-				else
-				{
-					alert("Wrong confirm");
-					return false;
-				}
-
-
-
-				if(Pnumber != "")
-				{
-					return true;
-				}
-				else
-				{
-					alert("Wrong Pnumber");
-					return false;
-				}
-
-
-
-
-
 				
-				if(email != "")
+				if(going != "")
 				{
 					return true;
 				}
 				else
 				{
-					alert("Wrong email");
+					alert("null value");
 					return false;
 				}
-
-
 				
-				if(dob != "")
+				if(time != "")
 				{
 					return true;
 				}
 				else
 				{
-					alert("Wrong dob");
+					alert("null value");
 					return false;
 				}
-			}
-
+				
+				if(date != "")
+				{
+					return true;
+				}
+				else
+				{
+					alert("null value");
+					return false;
+				}
 
 		</script>
 </body>
+<html/>
